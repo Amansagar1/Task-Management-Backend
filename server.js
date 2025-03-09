@@ -17,7 +17,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes); 
 
 app.use(cors({
-    origin: ["http://localhost:3000"]
+    origin: ["http://localhost:3000,https://task-management-frontend-mauve.vercel.app/"]
 }));
 
 app.get('/',(req,res)=>{
