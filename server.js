@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json()); 
 
 // Routes
-app.use('/api/auth', authRoutes); 
-app.use('/api/tasks', taskRoutes); 
+app.use('/auth', authRoutes); 
+app.use('/tasks', taskRoutes); 
 
 // Database connection
 const PORT = process.env.PORT || 5000;
